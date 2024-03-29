@@ -4,7 +4,7 @@
 * {
   margin: auto;
   box-sizing: border-box;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   float: none;
@@ -332,51 +332,53 @@ body {
 aside {
   color: white;
   margin: 20px auto;
-  padding: 15px;
-  background-color: #05335c;
-  border: 2px;
-  border-color: #b0b0b0;
-  border-radius: 25%;
-  box-sizing: border-box;
-  position: relative;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 25px;
   padding: 20px;
-  margin-top: 20px;
+  background-color: #05335c;
+  border: 2px solid #b0b0b0;
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .bckgrnd {
   background-image: url(assets/image/web-background.jpg);
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
   background-size: cover;
 }
 
-.profil-header {
-  width: 25%;
-  border-bottom: 3px double #05335c;
-  margin: 0 auto;
-  text-align: center;
+.profile-header {
+  border-bottom: 3px double #fff;
+  margin-bottom: 20px;
 }
 
 .profile-image {
   width: 170px;
-  display: block;
-  border-radius: 100%;
-  border-color: white;
-  border: 2px;
-  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 20px;
 }
 
-table {
-  margin: auto;
-  padding: 50px auto;
-  font-family: 'Poppins', sans-serif;
+.profile-table {
+  width: 100%;
+}
+
+.profile-table td {
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.profile-table td:first-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.profile-table td:nth-child(2) {
+  padding: 0 10px;
+}
+
+.profile-table td:last-child {
+  text-align: left;
+  padding-left: 10px;
 }
 
 b {
